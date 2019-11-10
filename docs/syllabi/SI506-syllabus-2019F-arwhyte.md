@@ -206,7 +206,8 @@ An in-class, "open book, open network" midterm exam will be held on Thursday, 17
 
 ### Final Project
 
-The weekly problem sets are designed to prepare you for submitting a final project that will involve Python scripting. A project plan outlining the final project deliverable's purpose, design and relevant implementation details is due two weeks before submission of the final project. The final project plan is worth 100 points while the final project is worth 2400 points. More details regarding final project requirements will be provided in class.
+The weekly problem sets are designed to prepare you for submitting a final project that will involve Python scripting. 
+The final project is worth 2500 points. More details regarding final project requirements will be provided in class.
 
 ## Calendar Highlights: Midterm exam, Final Project, and meeting cancellations
 
@@ -229,7 +230,7 @@ The weekly problem sets are designed to prepare you for submitting a final proje
 | Office Hours | 29 November | Friday | Cancelled | Thanksgiving recess. |
 | Lecture | 10 December | Tuesday | Scheduled | Last lecture. Classes end officially on Wednesday, 11 December. |
 | Study day | 12 December | Thursday | Scheduled | Per University Academic Calendar. |
-| __Final Project__ | 16 December | Monday | Scheduled | Online submission. Due no later than 15 December, 11:59 PM Eastern. |
+| __Final Project__ | 16 December | Monday | Scheduled | Online submission. Due no later than Monday, 16 December, 11:59 PM Eastern. |
 
 ## Assignment Scoring
 
