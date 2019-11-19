@@ -1,4 +1,4 @@
-# SI 506 2019F - Problem Set 109
+# SI 506 2019F - Problem Set 10
 
 # In this problem set you will work with the Star Wars API. We recommend you read through some of the documentation (https://swapi.co/documentation) and reference it as you work through the following problems. You will also want to reference the requests documentation (https://requests.readthedocs.io/en/master/user/quickstart/#quickstart).
 
