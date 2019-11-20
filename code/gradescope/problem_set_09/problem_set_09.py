@@ -19,7 +19,7 @@ import json
 # use the json module to convert the response into a Python dictionary <films_dict>,
 # and assign the keys in the Python object to <films_keys>.
 
-# HINT: You will want to incorporate '.get()', '.text', and '.loads()' in your code.
+# HINT: You can use '.get()' and .json(). Alternatively, you can try with '.get()', '.text', and '.loads()'.
 
 # BEGIN PROBLEM 1
 baseurl = 'https://swapi.co/api/'
