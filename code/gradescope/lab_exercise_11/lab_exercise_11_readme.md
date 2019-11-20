@@ -1,13 +1,17 @@
 # SI 506: Lab Exercise 11
 
-This week's lab exercise includes four (3) problems that focuses on practicing working with Docstrings, JSON, requests and HTTP GET method
-Retrieve lab_exercise_11.py from Canvas Files or the Github [SI506-2019Fall](https://github.com/umsi-arwhyte/SI506-2019Fall) repo
+This week's lab exercise includes four (3) problems that focuses on practicing working with 
+Docstrings, JSON, requests and HTTP GET method.
+
+Retrieve `lab_exercise_11.py` from Canvas Files or the Github 
+[SI506-2019Fall](https://github.com/umsi-arwhyte/SI506-2019Fall) repo.
 
 When you have completed the problem set click on the Gradescope link in Canvas and upload your
-'lab_exercise_11.py' file to the Gradescope site.  Your submission will be auto-graded and any runtime
-errors encountered will be recoded and displayed.  You may re-submit your exercise as many
-times as is necessary before the close date.  Late submissions will be penalized as described
-in the syllabus.
+`lab_exercise_11.py` file to the Gradescope site.  
+
+Note: the autograder allows for manually grading portions of the submission. We will manually grade 
+your Docstrings. You may re-submit your exercise as many times as is necessary before the close date.  
+Late submissions will be penalized as described in the syllabus.
 
 The general layout of a SI 506 lab exercise resembles the following:
 

@@ -114,7 +114,7 @@ main:
 ----- Grading Rubric -----
 
 20 pts: <get_data> works correctly
-20 pts: <search_swapi> works correctly and uses <get_data>
+20 pts: <search_swapi> works correctly
 20 pts: <get_information_on_characters> works correctly
 20 pts: <write_json> works correctly
 10 pts: Every function has a docstring
