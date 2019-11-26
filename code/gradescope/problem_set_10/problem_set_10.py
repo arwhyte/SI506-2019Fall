@@ -51,7 +51,7 @@ get_information_on_characters
     parameters:
         - list_of_characters (list)
     description:
-        Given a result set of characters from a SWAPI query, return a nested list
+        Given a result set of characters from a SWAPI query, return a nested dictionary
         of the character name, birth year, and species name. In other words, <list_of_characters>
         should be a list structured like the value to the key 'results' from the dictionary that
         is returned from <search_swapi>.
