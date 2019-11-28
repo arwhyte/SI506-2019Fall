@@ -716,6 +716,7 @@ the smugglers [Han Solo](https://starwars.fandom.com/wiki/Han_Solo/Legends) and
 | ------------: | :- | :--------: | :--------: | :---- |
 | 1 | url | str |  | |
 | 2 | name | str | | SWAPI search field. |
+| 3 | height | str | int | |
 | 3 | mass | str | int | |
 | 4 | hair_color | str | list | |
 | 5 | skin_color | str | list | |
@@ -806,11 +807,12 @@ to enrich the starship data as well as retrieve individual crew data.
 | 7 | width | float | | Non-SWAPI property sourced from [Wookieepedia](https://starwars.fandom.com/wiki/Main_Page).  |
 | 8 | max_atmosphering_speed | str | int | |
 | 9 | hyperdrive_rating | str | float | |
-| 10 | crew | str | int | |
-| 11 | passengers | str | int |  |
-| 12 | cargo_capacity | str | int |  |
-| 13 | consumables | str |  |  |
-| 14 | armament | list |  | Non-SWAPI property sourced from [Wookieepedia](https://starwars.fandom.com/wiki/Main_Page). |
+| 10 | MGLT | str | int | |
+| 11 | crew | str | int | |
+| 12 | passengers | str | int |  |
+| 13 | cargo_capacity | str | int |  |
+| 14 | consumables | str |  |  |
+| 15 | armament | list |  | Non-SWAPI property sourced from [Wookieepedia](https://starwars.fandom.com/wiki/Main_Page). |
 
 ### Vehicle
 __sources: `swapi-echo_base-v1p0.json`, SWAPI__
