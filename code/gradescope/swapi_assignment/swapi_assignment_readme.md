@@ -541,11 +541,22 @@ evac_plan = echo_base['evacuation_plan']
 ```
 
 #### 6.5.1 Evacuation arithmetic
-Loop over the `echo_base` nested `personnel` dictionary to get a total count of base personnel. Get
-the total number of `echo_base` available transports and the evacuation plan
-`passenger_overload_multiplier` value. Then compute the total number of base personnel that can
-be evacuated in a single lift prior to an Imperial assault on the base. Update the
-`echo_base['evacuation_plan']` properties with these values.
+Loop over the `echo_base` nested `personnel` dictionary and add up the total number of base 
+personnel. Assign the computed value to evac plan's `max_base_personnel` property. 
+
+Next retrieve the count of the Echo Base transport fleet and assign it to 
+`max_available_transports`. 
+
+Next, multiply the number of Echo Base transports by the number of passengers each transport is 
+rated to carry. The sum of this calculation represents the standard passenger carrying capacity of 
+the Echo Base transport fleet. Assume that in an emergency each transport can carry three (3) times 
+the number of passengers in a single lift by trading cargo space for passenger use. Multiply the 
+standard passenger carrying capacity of the Echo Base transport fleet by the 
+`passenger_overload_multiplier` and assign the result to `max_passenger_overload_capacity`. This 
+number represents the total number of base personnel that could be evacuated in a single lift 
+prior to an Imperial assault on the base. 
+
+Be sure to update the `echo_base['evacuation_plan']` properties with these values.
 
 #### 6.5.2 Bright Hope transport assignment
 Next, make a _shallow_ copy of the `echo_base` transport dictionary (e.g., `transport.copy()`) and
