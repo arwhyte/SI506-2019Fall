@@ -115,7 +115,7 @@ key-values. The function defines two parameters, `data` (dict) and `filter_keys`
 insertion order of the filtered key-value pairs is determined by the `filter_key` sequence. The
 function returns a filtered collection of key-value pairs to the caller.
 
-### 5.5 def is_number(value): - 150 points
+### 5.5 def is_unknown(value): - 150 points
 This function applies a _case-insensitive_ truth value test for string values that equal
 `unknown` or `n/a`. The function defines a single parameter `value` (str).  Returns `True` if a
 match is obtained.
@@ -174,7 +174,7 @@ capable of conversion the function will return a dictionary with 'cleaned' value
 The function _must_ perform the following checks and conversions:
 
 #### General
-- Convert 'unknown' or 'n/a' values to `None`. Performs truth value test with `is_number(value)`.
+- Convert 'unknown' or 'n/a' values to `None`. Performs truth value test with `is_unknown(value)`.
 - Convert a decimal value masquerading as a string to `float`. Calls `convert_string_to_float(value)`.
 - Convert an integer value masquerading as a string to `int`. Calls `convert_string_to_int(value)`.
 - Converts comma delimited string values to type list. Calls `convert_string_to_list(value)`.
@@ -243,13 +243,13 @@ ancillary functions from `main()` or, when appropriate, from other functions as 
 Code you write in main() will orchestrate the creation of the following two files:
 
 - __250 points__: `swapi_planets_uninhabited-v1p1.json`, a JSON file comprising a list of
-  likely uninhabited planets where a new rebel base could be situated if Imperial forces discover 
+  likely uninhabited planets where a new rebel base could be situated if Imperial forces discover
   the location of Echo Base on the ice planet Hoth.
 
-- __500 points__: `swapi_echo_base-v1p1.json1`, a JSON file of Echo Base information including an 
-  evacuation plan of base personnel along with passenger assignments for Princess Leia, the 
-  communications droid C-3PO aboard the transport Bright Hope escorted by two X-wing starfighters 
-  piloted by Luke Skywalker (with astromech droid R2-D2) and Wedge Antilles (with astromech droid 
+- __500 points__: `swapi_echo_base-v1p1.json1`, a JSON file of Echo Base information including an
+  evacuation plan of base personnel along with passenger assignments for Princess Leia, the
+  communications droid C-3PO aboard the transport Bright Hope escorted by two X-wing starfighters
+  piloted by Luke Skywalker (with astromech droid R2-D2) and Wedge Antilles (with astromech droid
   R5-D4). - 500 points
 
 ## 6.0 Implementation steps
@@ -316,7 +316,7 @@ Implement the following functions (described above):
 
 The focus of this phase of the development process is on the conversion of string values to more
 appropriate data types. The function `clean_data()` manages the value conversion logic,
-calling `is_number()` to check for unknown values and converting those values to `None.`
+calling `is_unknown()` to check for unknown values and converting those values to `None.`
 
 `clean_data()` will also call various `convert_string_to_*()` functions that will perform the
 type conversion operations. In `clean_data()` create a set of property name tuples based on the
@@ -541,20 +541,20 @@ evac_plan = echo_base['evacuation_plan']
 ```
 
 #### 6.5.1 Evacuation arithmetic
-Loop over the `echo_base` nested `personnel` dictionary and add up the total number of base 
-personnel. Assign the computed value to evac plan's `max_base_personnel` property. 
+Loop over the `echo_base` nested `personnel` dictionary and add up the total number of base
+personnel. Assign the computed value to evac plan's `max_base_personnel` property.
 
-Next retrieve the count of the Echo Base transport fleet and assign it to 
-`max_available_transports`. 
+Next retrieve the count of the Echo Base transport fleet and assign it to
+`max_available_transports`.
 
-Next, multiply the number of Echo Base transports by the number of passengers each transport is 
-rated to carry. The sum of this calculation represents the standard passenger carrying capacity of 
-the Echo Base transport fleet. Assume that in an emergency each transport can carry three (3) times 
-the number of passengers in a single lift by trading cargo space for passenger use. Multiply the 
-standard passenger carrying capacity of the Echo Base transport fleet by the 
-`passenger_overload_multiplier` and assign the result to `max_passenger_overload_capacity`. This 
-number represents the total number of base personnel that could be evacuated in a single lift 
-prior to an Imperial assault on the base. 
+Next, multiply the number of Echo Base transports by the number of passengers each transport is
+rated to carry. The sum of this calculation represents the standard passenger carrying capacity of
+the Echo Base transport fleet. Assume that in an emergency each transport can carry three (3) times
+the number of passengers in a single lift by trading cargo space for passenger use. Multiply the
+standard passenger carrying capacity of the Echo Base transport fleet by the
+`passenger_overload_multiplier` and assign the result to `max_passenger_overload_capacity`. This
+number represents the total number of base personnel that could be evacuated in a single lift
+prior to an Imperial assault on the base.
 
 Be sure to update the `echo_base['evacuation_plan']` properties with these values.
 
@@ -838,10 +838,10 @@ Enriching this data requires issuing a GET request to SWAPI.
 | 12 | armament | list |  | Non-SWAPI property sourced from [Wookieepedia](https://starwars.fandom.com/wiki/Main_Page). |
 
 ## Appendix C. Auto Grader Tests
-Below is the list of the unit tests that the auto grader runs. The test functions call functions 
-directly from your imported module(`swapi_assignment.py`) in order to test their behaviors. 
+Below is the list of the unit tests that the auto grader runs. The test functions call functions
+directly from your imported module(`swapi_assignment.py`) in order to test their behaviors.
 
-For a test to succeed, you _must_ implement all functions required by the test as well as write a 
+For a test to succeed, you _must_ implement all functions required by the test as well as write a
 Docstring for each function formatted per Appendix A instructions.
 
 | test | functions called |
